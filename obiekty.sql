@@ -189,8 +189,8 @@ gracz_w
 END;
 /
 
-CREATE OR REPLACE FUNCTION nastepny_gracz (gracz in char(1))
-RETURN char(1)
+CREATE OR REPLACE FUNCTION nastepny_gracz (gracz varchar)
+RETURN varchar
 AS
 
 BEGIN
@@ -205,6 +205,5 @@ elsif gracz='w' then
   return 'n';
 end if;
 
-END
-
+END;
 /
