@@ -65,6 +65,43 @@ id integer,
 odzywka varchar(2)
 );
 
+delete from hierarchia odzywek;
+
+insert into hierarchia_odzywek values(1, '1c');
+insert into hierarchia_odzywek values(2, '1d');
+insert into hierarchia_odzywek values(3, '1h');
+insert into hierarchia_odzywek values(4, '1s');
+insert into hierarchia_odzywek values(5, '1n');
+insert into hierarchia_odzywek values(6, '2c');
+insert into hierarchia_odzywek values(7, '2d');
+insert into hierarchia_odzywek values(8, '2h');
+insert into hierarchia_odzywek values(9, '2s');
+insert into hierarchia_odzywek values(10, '2n');
+insert into hierarchia_odzywek values(11, '3c');
+insert into hierarchia_odzywek values(12, '3d');
+insert into hierarchia_odzywek values(13, '3h');
+insert into hierarchia_odzywek values(14, '3s');
+insert into hierarchia_odzywek values(15, '3n');
+insert into hierarchia_odzywek values(16, '4c');
+insert into hierarchia_odzywek values(17, '4d');
+insert into hierarchia_odzywek values(18, '4h');
+insert into hierarchia_odzywek values(19, '4s');
+insert into hierarchia_odzywek values(20, '4n');
+insert into hierarchia_odzywek values(21, '5c');
+insert into hierarchia_odzywek values(22, '5d');
+insert into hierarchia_odzywek values(23, '5h');
+insert into hierarchia_odzywek values(24, '5s');
+insert into hierarchia_odzywek values(25, '5n');
+insert into hierarchia_odzywek values(26, '6c');
+insert into hierarchia_odzywek values(27, '6d');
+insert into hierarchia_odzywek values(28, '6h');
+insert into hierarchia_odzywek values(29, '6s');
+insert into hierarchia_odzywek values(30, '6n');
+insert into hierarchia_odzywek values(31, '7c');
+insert into hierarchia_odzywek values(32, '7d');
+insert into hierarchia_odzywek values(33, '7h');
+insert into hierarchia_odzywek values(34, '7s');
+insert into hierarchia_odzywek values(35, '7n');
 
 -- POMOCNICZE PROCEDURY                                                 
 
