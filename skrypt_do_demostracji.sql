@@ -1,4 +1,4 @@
-select object_name, object_type from all_objects where owner='PAW';
+--select object_name, object_type from all_objects where owner='PAW';
 
 -- przed wywolaniem tego skryptu demonstracyjnego nalezy wyzerowac sekwencje
 
