@@ -1,16 +1,16 @@
---select object_name, object_type from all_objects where owner='PAW';
+select object_name, object_type from all_objects where owner='PAW';
 
 -- przed wywolaniem tego skryptu demonstracyjnego nalezy wyzerowac sekwencje
 
 truncate table turnieje;
 execute dodaj_turniej('sum');
 select*from turnieje;
--- id_turnieju 1, zapis sumaryczny
+-- id_turnieju: 1, zapis sumaryczny
 
 truncate table rozdania;
 execute nowe_rozdanie(1,'N');
 select*from rozdania;
--- id_rozdania 1, rozdajacy N
+-- id_rozdania: 1, rozdajacy N
 
 execute dodaj_gracza('Stefan','Banach');
 execute dodaj_gracza('Stanislaw','Ulam');
@@ -25,7 +25,9 @@ select*from pary;
 -- id par: 1,2
 
 execute dodaj_rozgrywke(1, 1, 1, 2, 1, 1);
+select*from rozgrywki;
+-- id_rozgrywki: 1
 
-
-
-
+execute zglos_odzywke(1,'pa');
+execute zglos_odzywke(1,'1c');
+select przebieg_licytacji from rozgrywki where rozgrywka_id=1;
