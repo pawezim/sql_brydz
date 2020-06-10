@@ -56,3 +56,78 @@ insert into karty values (52, 'Ac');
 CREATE SEQUENCE rozdania_seq START WITH 1;
 
 create table losowania (x varchar(255) );
+
+
+create sequence gracze_seq start with 1;
+create sequence pary_seq start with 1;
+create sequence turnieje_seq start with 1;
+create sequence rozgrywki_seq start with 2;
+
+create sequence lewy_seq start with 1;
+
+create or replace procedure dodaj_gracza(imie varchar, nazwisko varchar)
+AS
+
+BEGIN
+
+insert into gracze values(
+gracze_seq.nextval,
+imie,
+nazwisko
+);
+
+END;
+/
+
+create or replace procedure dodaj_pare(id_1 integer, id_2 integer, id_turnieju integer)
+AS
+
+BEGIN
+
+insert into pary values(
+pary_seq.nextval,
+null,
+0,
+0,
+id_1,
+id_2,
+id_turnieju
+);
+
+END;
+/
+
+create or replace procedure dodaj_turniej (punktacja varchar)
+AS
+
+BEGIN
+
+insert into turnieje values(
+turnieje_seq.nextval,
+punktacja,
+sysdate,
+null
+);
+
+END;
+/
+
+create or replace procedure zakoncz_turniej (id integer)
+AS
+
+BEGIN
+
+update turnieje set
+czas_zakonczenia = sysdate
+where turniej_id = id;
+
+END;
+/
+
+
+create table hierarchia_odzywek (
+id integer,
+odzywka varchar(2)
+);
+
+
