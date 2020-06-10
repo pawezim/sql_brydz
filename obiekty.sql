@@ -200,7 +200,7 @@ select gracz_1_id into gracz_w from pary where para_id=id_pary_we;
 select gracz_2_id into gracz_e from pary where para_id=id_pary_we;
 
 insert into rozgrywki values(
-turnieje_seq.nextval,
+rozgrywki_seq.nextval,
 numer_stolu,
 numer_rundy,
 null,
