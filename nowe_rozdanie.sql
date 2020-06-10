@@ -1,9 +1,9 @@
 create or replace NONEDITIONABLE PROCEDURE nowe_rozdanie(turniej_id integer, rozdajacy VARCHAR)  AS
 
-   rozd1 varchar(255);
-   rozd2 varchar(255);
-   rozd3 varchar(255);
-   rozd4 varchar(255);
+   rozd1 varchar(26);
+   rozd2 varchar(26);
+   rozd3 varchar(26);
+   rozd4 varchar(26);
    
 
     BEGIN
