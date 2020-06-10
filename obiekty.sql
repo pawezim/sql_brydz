@@ -53,17 +53,7 @@ insert into karty values (50,'Qc');
 insert into karty values (51, 'Kc');
 insert into karty values (52, 'Ac');
 
-CREATE SEQUENCE rozdania_seq START WITH 1;
-
 create table losowania (x varchar(255) );
-
-
-create sequence gracze_seq start with 1;
-create sequence pary_seq start with 1;
-create sequence turnieje_seq start with 1;
-create sequence rozgrywki_seq start with 2;
-
-create sequence lewy_seq start with 1;
 
 create or replace procedure dodaj_gracza(imie varchar, nazwisko varchar)
 AS
